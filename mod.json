@@ -1,0 +1,46 @@
+{
+	"geode": "4.3.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "zilko.playback_marker",
+	"name": "Playback Marker",
+	"version": "v1.0.0",
+	"developer": "Zilko",
+	"description": "Marks ur playback",
+	"links": {
+		"source": "https://github.com/ZiLko/Playback-Marker"
+	},
+	"dependencies": {
+		"geode.custom-keybinds": {
+			"importance": "required",
+			"version": ">=1.10.3"
+		},
+		"geode.node-ids": {
+			"importance": "required",
+			"version": ">=1.20.1" 
+		}
+	},
+	"resources": {
+        "sprites": [
+            "resources/marker.png",
+            "resources/marker-2.png"
+        ]
+    },
+	"settings": {
+		"show-button": {
+			"name": "Show Marker Button",
+			"description": "Shows a button to place the marker in the editor.",
+			"type": "bool",
+			"default": false,
+			"platforms": ["win", "mac", "mac-arm", "mac-intel"]
+		},
+		"keybinds": {
+			"type": "custom:keybinds",
+			"name": "Keybinds"
+		}
+	}
+}
